@@ -1,4 +1,7 @@
 
+	//Hcaptcha script
+	<script src="https://js.hcaptcha.com/1/api.js" async defer></script>
+
 	//java script to reset forms on load
 	 window.onload = function () {
             // Reset the form fields when the page loads

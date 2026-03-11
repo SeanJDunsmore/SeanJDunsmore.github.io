@@ -30,28 +30,46 @@ p
     	padding-right: 1vh;
 }
 
-h1 
-{
-	font-size: 3.5vh;
-    	text-align: center;
-    	padding-left: 1vh;
-    	padding-right: 1vh;
+h1 {
+    font-size: min(5vw,40px);
+    text-align: center;
+    padding-left: 1vh;
+    padding-right: 1vh;
+    margin-top: max(3vw, 10px);
 }
 
-h3 
-{
-	    font-size: 2.5vh;
-    	text-align: center;
-    	padding-left: 1vh;
-    	padding-right: 1vh;
-    	margin-top: -3vh;
+wiggletest {
+    animation: wiggle 0.0001s linear infinite;
+}
+
+@keyframes wiggle {
+    0% {
+        transform: translatey(-1vh)
+    }
+
+    50% {
+        transform: translatey(1vh)
+    }
+
+    100% {
+        transform: translatey(-1vh)
+    }
+}
+
+h3 {
+    font-size: min(4vw,32px);
+    text-align: center;
+    padding-left: 1vh;
+    padding-right: 1vh;
+    margin-top: max(-5vw, -40px);
+    margin-bottom: -3vw; 
 }
 
 header {
-	font-size: 100%;
+	font-size: 1vw;
     	font-family: "Tektur", sans-serif;
     	background-color: #ff4d4d;
-    	margin-top: -30px;
+    	margin-top: -2vw;
 }
 
 input {
@@ -59,9 +77,9 @@ input {
     padding-top: 1vh;
     padding-bottom: 1vh;
     font-family: "Tektur", sans-serif;
-    width: 50vw;
-    margin-top: -1.5vh;
-    margin-bottom: -1.5vh;
+    width: 49vw;
+    margin-top: -3vh;
+    margin-bottom: -3vh;
 }
 
 textarea {
@@ -70,7 +88,7 @@ textarea {
    	padding-bottom: 1vh;
  	font-family: "Tektur", sans-serif;
     	width: 50vw;
-	margin-top: -1.5vh;
+	margin-top: -1.3vh;
 	margin-bottom: -1.5vh;
 }
 
@@ -80,47 +98,62 @@ button {
     padding-bottom: 1.5vh;
     font-family: "Tektur", sans-serif;
     width: 50vw;
-    margin-top: -1.5vh;
+    margin-top: -1vh;
 }
 
 h-captcha {
-	font-size: 100%;
-  	font-family: "Tektur", sans-serif;
-  	width: 50vw;
-	margin-top: -4vh;
+    font-size: 100%;
+    font-family: "Tektur", sans-serif;
+    width: 50vw;
+    margin-top: -4vh;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    justify-content: center;
+    display: inline-block;
 }
 
 footer {
-	font-size: 100%;
-	font-family: "Tektur", sans-serif;
-	background-color: #ff4d4d;
+    font-size: 100%;
+    font-family: "Tektur", sans-serif;
+    background-color: #ff4d4d;
+    text-align: center;
 }
 
 .formboxes {
-	font-size: 100%;
-	width: 100%;
-   	padding-top: 1.5vh;
-   	padding-bottom: 1.5vh;
-   	margin-left: auto;
-   	margin-right: auto;
+    font-size: 100%;
+    width: 59vw;
+    padding-top: 1.5vh;
+    padding-bottom: 1.5vh;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    justify-content: center;
 }
 
 .youtube-container {
-	font-size: 100%;
-	text-align: center;
-    	align-items: center;
-   	overflow: hidden;
-   	width: 50vw;
-    	aspect-ratio: 16/9;
-   	pointer-events: none;
-	margin-left: auto;
-   	margin-right: auto;
+    font-size: 100%;
+    text-align: center;
+    align-items: center;
+    overflow: hidden;
+    width: 50vw;
+    aspect-ratio: 16/9;
+    pointer-events: none;
+    margin-left: auto;
+    margin-right: auto;
+}
 
-	iframe {
-		text-align: center;
-    		align-items: center;
-    		width: 300%;
-    		height: 100%;
-		margin-left: -100%;
-	}
+iframe {
+    text-align: center;
+    align-items: center;
+}
+
+img {
+    max-Width: 80px;
+    max-height: 80px;
+}
+
+form {
+    text-align: center;
+    justify-content: center;
 }
