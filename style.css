@@ -66,10 +66,10 @@ h3 {
 }
 
 header {
-	font-size: 1vw;
-    	font-family: "Tektur", sans-serif;
-    	background-color: #ff4d4d;
-    	margin-top: -2vw;
+    font-size: 1vw;
+    font-family: "Tektur", sans-serif;
+    background-color: #ff4d4d;
+    margin-top: min(0.1vw, 1px);
 }
 
 input {

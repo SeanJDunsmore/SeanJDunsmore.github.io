@@ -13,4 +13,9 @@
 	tag.src = "//www.youtube.com/iframe_api";
 	var firstScriptTag = document.getElementsByTagName('script')[0];
 	firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-	var url = window.location.pathname; 
+    var url = window.location.pathname; 
+
+
+function test() {
+    alert('Hello');
+}
