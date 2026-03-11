@@ -1,18 +1,16 @@
 
-.center 
-{
-	font-size: 100%;
-    	margin: auto;
-    	width: 50%;
-    	padding: 10px;
+.center {
+    font-size: 100%;
+    margin: auto;
+    width: 50%;
+    padding: 1vw;
 }
 
-head
-{
-	font-size: 100%;
-    	text-align: center;
-    	align-items: center;
-    	padding: 10px;
+head {
+    font-size: 100%;
+    text-align: center;
+    align-items: center;
+    padding: 1vw;
 }
 
 body
@@ -20,7 +18,7 @@ body
 	font-size: 100%;
     	text-align: center;
     	align-items: center;
-    	padding: 10px;
+    	padding: 1vw;
     	background-color: #444444;
 }
 
@@ -42,11 +40,11 @@ h1
 
 h3 
 {
-	font-size: 2.5vh;
+	    font-size: 2.5vh;
     	text-align: center;
     	padding-left: 1vh;
     	padding-right: 1vh;
-    	margin-top: -30px;
+    	margin-top: -3vh;
 }
 
 header {
@@ -57,39 +55,39 @@ header {
 }
 
 input {
-	font-size: 100%;
-  	padding-top: 12px;
-   	padding-bottom: 12px;
- 	font-family: "Tektur", sans-serif;
-    	width: 50vw;
-	margin-top: -30px;
-	margin-bottom: -10px;
+    font-size: 100%;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    font-family: "Tektur", sans-serif;
+    width: 50vw;
+    margin-top: -1.5vh;
+    margin-bottom: -1.5vh;
 }
 
 textarea {
 	font-size: 100%;
-  	padding-top: 12px;
-   	padding-bottom: 12px;
+  	padding-top: 1vh;
+   	padding-bottom: 1vh;
  	font-family: "Tektur", sans-serif;
     	width: 50vw;
-	margin-top: -10px;
-	margin-bottom: -7px;
+	margin-top: -1.5vh;
+	margin-bottom: -1.5vh;
 }
 
 button {
-	font-size: 100%;
-  	padding-top: 12px;
-   	padding-bottom: 12px;
-    	font-family: "Tektur", sans-serif;
-    	width: 50vw;
-	margin-top: -20px;
+    font-size: 100%;
+    padding-top: 1.5vh;
+    padding-bottom: 1.5vh;
+    font-family: "Tektur", sans-serif;
+    width: 50vw;
+    margin-top: -1.5vh;
 }
 
 h-captcha {
 	font-size: 100%;
   	font-family: "Tektur", sans-serif;
   	width: 50vw;
-	margin-top: -30px;
+	margin-top: -4vh;
 }
 
 footer {
@@ -101,8 +99,8 @@ footer {
 .formboxes {
 	font-size: 100%;
 	width: 100%;
-   	padding-top: 12px;
-   	padding-bottom: 12px;
+   	padding-top: 1.5vh;
+   	padding-bottom: 1.5vh;
    	margin-left: auto;
    	margin-right: auto;
 }
