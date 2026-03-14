@@ -2,6 +2,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<script src="https://js.hcaptcha.com/1/api.js" async defer></script>
+
 <header>
 
     <h1 style="margin-top: 0px"> Sean Dunsmore </h1>
@@ -25,7 +27,7 @@
     <script src="index.js"></script>
 </head>
 
-<body>
+<body onload="setfirstTab()";>
 
     <p>
         <h1> About </h1>
@@ -33,16 +35,35 @@
 
     <p>
         <h1> Projects </h1>
-
+        <h3> See some of my previous work </h3>
     </p>
 
-    <button id="tab1button" class="tabButton" onmousedown=alert('Hello');>hello</button>
-    <input type="button" onclick="test()">
-    <button id="tabbutton" class="tabButton" onmousedown="test()">Tabtest</button>
+    <div style="text-align: center; height: 15vw; margin-bottom: -3vw; margin-top: 3vw; max-block-size: 100px;">
 
-    <div class="Tabs">
-        <input type="button" onclick="test()">
-        <button id="tabbutton" class="tabButton" onmousedown="test()">Tabtest</button>
+        <button id="lastTab" class="tabButton" onmousedown="lastTab()">lastTab</button>
+        <button id="nextTab" class="tabButton" onmousedown="nextTab()">nextTab</button>
+
+    </div>
+
+    <div id="tab1" class="tabContent">
+
+        test text for tab1
+        <div class="youtube-container">
+            <iframe style=" width: 300%; height: 100%; margin-left: -100%;" src="https://www.youtube.com/embed/KtgHkzAqjjs?enablejsapi=1&rel=0&playsinline=1&modestbranding=1&autohide=1&controls=0&autoplay=1&mute=1&showinfo=0&loop=1&playlist=KtgHkzAqjjs&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+    </div>
+
+    <div id="tab2" class="tabContent">
+
+        test text for tab2
+
+    </div>
+
+    <div id="tab3" class="tabContent">
+
+        test text for tab3
+
     </div>
 
 </body>
@@ -75,8 +96,3 @@
 
     <p>Check out this websites code <a href="https://github.com/SeanJDunsmore/SeanJDunsmore.github.io">here</a></p>
 </footer>
-
-<div class="youtube-container">
-    <iframe style=" width: 300%; height: 100%; margin-left: -100%;" src="https://www.youtube.com/embed/KtgHkzAqjjs?enablejsapi=1&rel=0&playsinline=1&modestbranding=1&autohide=1&controls=0&autoplay=1&mute=1&showinfo=0&loop=1&playlist=KtgHkzAqjjs&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</div>
-

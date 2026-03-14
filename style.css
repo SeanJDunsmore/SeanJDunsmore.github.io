@@ -97,7 +97,7 @@ button {
     padding-top: 1.5vh;
     padding-bottom: 1.5vh;
     font-family: "Tektur", sans-serif;
-    width: 50vw;
+    width: 10vw;
     margin-top: -1vh;
 }
 
@@ -156,4 +156,12 @@ img {
 form {
     text-align: center;
     justify-content: center;
+}
+
+.tabContent {
+    display: none;
+}
+
+later {
+    display: none;
 }
