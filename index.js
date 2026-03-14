@@ -30,23 +30,41 @@ function nextTab() {
 
 function lastTab() {
 
+    //Get reference to previous tab
+    var previoustab = document.getElementById("tab" + currentTab);
+    //Start animation for previous tab
+    previoustab.style.animation = "slideLeft 0.5s linear";
+    //previoustab.style.animationPlayState = in
+    //Reverse keyword
+    //previoustab.startAnimation("slideoffLeft 0.5s linear");
+    //Add listener for when the previous tab ends
+    //previoustab.addEventListener("animationend", alert("ended"));
+    //previoustab.addEventListener("animationstart", alert("started"));
+
+    document.getElementById("tab" + currentTab).onanimationend = hideTab(currentTab)
+
     if (currentTab > 1) {
         currentTab -= 1;
     }
     else {
         currentTab = tabAmount;
     }
+
     swapTab();
 }
 
 function swapTab() {
-    //Hide all tabs
-    tabcontent = document.getElementsByClassName("tabContent");
-    for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-    }
 
     //Open requested tab
     document.getElementById("tab" + currentTab).style.display = "block";
 
+    document.getElementById("tab" + currentTab).style.animation = "slideRight 0.5s linear reverse";
 }
+
+function hideTab(tab)
+{
+    alert("destroy");
+    document.getElementById("tab" + tab).style.animation = "none";
+    document.getElementById("tab" + tab).style.display = "none"
+}
+
