@@ -8,6 +8,8 @@ firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 var url = window.location.pathname;
 
 
+var animationrunning = false;
+
 var currentTab = 1;
 var tabAmount = 3;
 
@@ -19,6 +21,20 @@ function setfirstTab()
 
 function nextTab() {
 
+    if (animationrunning) { return }
+    animationrunning = true;
+
+    //Get reference to previous tab
+    var previoustab = document.getElementById("tab" + currentTab);
+    //Start animation for previous tab
+    previoustab.style.animation = "slideLeft 0.5s linear forwards";
+
+    //Hide when animation ends
+    setTimeout(function () {
+        previoustab.style.display = "none";
+        previoustab.style.animation = "none";
+    }, 500);
+
     if (currentTab < tabAmount) {
         currentTab += 1;
     }
@@ -26,22 +42,30 @@ function nextTab() {
         currentTab = 1;
     }
     swapTab();
+
+    document.getElementById("tab" + currentTab).style.animation = "slideRight 0.5s linear reverse forwards";
+
+    setTimeout(function () {
+        animationrunning = false;
+        document.getElementById("tab" + currentTab).style.animation = "none";
+    }, 500);
 }
 
 function lastTab() {
 
+    if (animationrunning) { return }
+    animationrunning = true;
+
     //Get reference to previous tab
     var previoustab = document.getElementById("tab" + currentTab);
     //Start animation for previous tab
-    previoustab.style.animation = "slideLeft 0.5s linear";
-    //previoustab.style.animationPlayState = in
-    //Reverse keyword
-    //previoustab.startAnimation("slideoffLeft 0.5s linear");
-    //Add listener for when the previous tab ends
-    //previoustab.addEventListener("animationend", alert("ended"));
-    //previoustab.addEventListener("animationstart", alert("started"));
+    previoustab.style.animation = "slideRight 0.5s linear forwards";
 
-    document.getElementById("tab" + currentTab).onanimationend = hideTab(currentTab)
+    //Hide when animation ends
+    setTimeout(function () {
+        previoustab.style.display = "none";
+        previoustab.style.animation = "none";
+    }, 500);
 
     if (currentTab > 1) {
         currentTab -= 1;
@@ -51,20 +75,19 @@ function lastTab() {
     }
 
     swapTab();
+
+    document.getElementById("tab" + currentTab).style.animation = "slideLeft 0.5s linear reverse forwards";
+
+    setTimeout(function () {
+        animationrunning = false;
+        document.getElementById("tab" + currentTab).style.animation = "none";
+    }, 500);
 }
 
 function swapTab() {
 
     //Open requested tab
-    document.getElementById("tab" + currentTab).style.display = "block";
+    document.getElementById("tab" + currentTab).style.display = "inline-block";
 
-    document.getElementById("tab" + currentTab).style.animation = "slideRight 0.5s linear reverse";
-}
-
-function hideTab(tab)
-{
-    alert("destroy");
-    document.getElementById("tab" + tab).style.animation = "none";
-    document.getElementById("tab" + tab).style.display = "none"
 }
 
