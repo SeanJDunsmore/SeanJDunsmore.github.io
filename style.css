@@ -94,7 +94,7 @@ header {
     align-items: center;
     font-size: 1vw;
     font-family: "Tektur", sans-serif;
-    background-color: #ff4d4d;
+    background-color: #ebbe94;
     margin-top: 0;
     position: fixed;
     justify-content: center;
@@ -105,6 +105,8 @@ header {
     overflow: visible;
     z-index: 10;
     border-radius: 5% / 50%;
+    border-style: solid;
+    border-block-color: black;
 }
 
 input {
@@ -135,6 +137,8 @@ button {
     width: 10vw;
     margin-top: -1vh;
     border-radius: 5% / 50%;
+    border-style: solid;
+    border-block-color: black;
 }
 
 h-captcha {
@@ -152,11 +156,13 @@ h-captcha {
 footer {
     font-size: 100%;
     font-family: "Tektur", sans-serif;
-    background-color: #ff4d4d;
+    background-color: #ebbe94;
     text-align: center;
     animation: fadeIn linear;
     animation-timeline: scroll();
     border-radius: 5% / 50%;
+    border-style: solid;
+    border-block-color: black;
 }
 
 .formboxes {
@@ -169,6 +175,8 @@ footer {
     text-align: center;
     justify-content: center;
     border-radius: 5% / 50%;
+    border-style: solid;
+    border-block-color: black;
 }
 
 .youtube-container {
@@ -183,6 +191,8 @@ footer {
     margin-right: auto;
     white-space: nowrap;
     border-radius: 5% / 50%;
+    border-style: solid;
+    border-block-color: black;
 }
 
 iframe {
@@ -200,6 +210,8 @@ form {
     text-align: center;
     justify-content: center;
     border-radius: 5% / 50%;
+    border-style: solid;
+    border-block-color: black;
 }
 
 .tabContent {
@@ -229,4 +241,12 @@ form {
 
 later {
     display: none infinite;
+}
+
+#backgroundVideo{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
 }
