@@ -1,6 +1,6 @@
 
-html{
-    overflow-x:hidden;
+html {
+    overflow-x: hidden;
 }
 
 .center {
@@ -37,7 +37,8 @@ h1 {
     text-align: center;
     padding-left: 1vh;
     padding-right: 1vh;
-    margin-top: max(3vw, 10px);
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 @keyframes slideLeft {
@@ -47,7 +48,7 @@ h1 {
     }
 
     100% {
-        transform: translateX(-50vw);
+        transform: translateX(-100vw);
         opacity: 0;
     }
 }
@@ -59,7 +60,7 @@ h1 {
     }
 
     100% {
-        transform: translateX(50vw);
+        transform: translateX(100vw);
         opacity: 0;
     }
 }
@@ -84,8 +85,8 @@ h3 {
     text-align: center;
     padding-left: 1vh;
     padding-right: 1vh;
-    margin-top: max(-5vw, -40px);
-    margin-bottom: -3vw; 
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 header {
@@ -95,18 +96,17 @@ header {
     font-size: 1vw;
     font-family: "Tektur", sans-serif;
     background-color: #ebbe94;
-    margin-top: 0;
-    position: fixed;
+    margin-top: -1vw;
     justify-content: center;
-    height: min(22vw,200px);
-    width: min(80vw,500px);
-    left: 50%;
-    transform: translate(-50%, -10%);
+    height: min(22vw,180px);
+    width: min(60vw,500px);
     overflow: visible;
-    z-index: 10;
     border-radius: 5% / 50%;
     border-style: solid;
     border-block-color: black;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1vw;
 }
 
 input {
@@ -131,15 +131,32 @@ textarea {
 
 button {
     font-size: 100%;
-    padding-top: 1.5vh;
-    padding-bottom: 1.5vh;
     font-family: "Tektur", sans-serif;
     width: 10vw;
-    margin-top: -1vh;
+    margin-top: auto;
     border-radius: 5% / 50%;
     border-style: solid;
     border-block-color: black;
+    height: min(5vw,40px);
+    width: min(10vw,1000px);
+    max-block-size: 100px;
+    background-color: #e3a468;
 }
+
+.submitButton {
+    font-size: 100%;
+    font-family: "Tektur", sans-serif;
+    width: 10vw;
+    margin-top: auto;
+    border-radius: 5% / 50%;
+    border-style: solid;
+    border-block-color: black;
+    height: min(5vw,40px);
+    width: min(20vw,1000px);
+    max-block-size: 100px;
+    background-color: #e3a468;
+}
+
 
 h-captcha {
     font-size: 100%;
@@ -163,6 +180,8 @@ footer {
     border-radius: 5% / 50%;
     border-style: solid;
     border-block-color: black;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .formboxes {
@@ -174,9 +193,101 @@ footer {
     margin-right: auto;
     text-align: center;
     justify-content: center;
+}
+
+iframe {
+    text-align: center;
+    align-items: center;
+    white-space: nowrap;
+}
+
+img {
+    max-Width: 80px;
+    max-height: 80px;
+}
+
+form {
+    text-align: center;
+    justify-content: center;
+    border-radius: 5% / 50%;
+}
+
+.tabHolder {
+    white-space: nowrap; 
+    margin-bottom: 1vh; 
+    position: relative; 
+    display: inline-flex; 
+    height: min(25vw,400px); 
+    width: min(70vw,1200px);
+}
+
+.tabContent {
+    display: none;
+    justify-content: center;
+    animation: none;
+    white-space: nowrap;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    background-color: #ebbe94;
     border-radius: 5% / 50%;
     border-style: solid;
     border-block-color: black;
+    margin-top: auto;
+    height: min(25vw,400px);
+    width: min(70vw,1200px);
+    font-family: "Tektur", sans-serif;
+    overflow: hidden;
+    text-align: center;
+}
+
+.tabText {
+    display: block;
+    text-align: center;
+    font-size: min(2vw,32px);
+    font-family: "Tektur", sans-serif;
+    text-align: center;
+    padding-left: 1vh;
+    padding-right: 1vh;
+    margin-left: 1vw;
+    white-space: normal;
+    margin-top: auto;
+    overflow: hidden;
+    left:0;
+}
+
+later {
+    display: none infinite;
+}
+
+#backgroundVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -10;
+}
+
+.video-container {
+    font-size: 100%;
+    text-align: center;
+    align-items: center;
+    overflow: hidden;
+    width: 30vw;
+    aspect-ratio: 16/9;
+    pointer-events: none;
+    margin-left: auto;
+    margin-right: auto;
+    white-space: nowrap;
+    border-radius: 5% / 50%;
+    border-style: solid;
+    border-block-color: black;
+}
+
+.video {
+    align-items: center;
+    width: 30vw;
 }
 
 .youtube-container {
@@ -195,59 +306,49 @@ footer {
     border-block-color: black;
 }
 
-iframe {
-    text-align: center;
-    align-items: center;
-    white-space: nowrap;
-}
 
-img {
-    max-Width: 80px;
-    max-height: 80px;
-}
-
-form {
-    text-align: center;
-    justify-content: center;
+.about {
+    animation: fadeIn linear;
+    animation-timeline: view();
+    background-color: #ebbe94;
     border-radius: 5% / 50%;
     border-style: solid;
     border-block-color: black;
-}
-
-.tabContent {
-    display: none;
-    justify-content: center;
-    animation: none;
-    white-space: nowrap;
-    margin-left: -25vw;
+    height: min(22.5vw,200px);
+    width: min(80vw,500px);
+    margin-left: auto;
     margin-right: auto;
-    position: absolute;
-}
-
-.tabText {
-    display: block;
-    text-align: center;
-    font-size: min(1vw,32px);
     font-family: "Tektur", sans-serif;
-    text-align: center;
-    padding-left: 1vh;
-    padding-right: 1vh;
-    width: 25vw;
-    margin-left: 25vw;
-    white-space: pre-line;
-    margin-top: 4vw;
-    overflow: hidden;
+    font-size: min(2vw,16px);
 }
 
-later {
-    display: none infinite;
+.skills {
+    animation: fadeIn linear;
+    animation-timeline: view();
+    background-color: #ebbe94;
+    border-radius: 5% / 50%;
+    border-style: solid;
+    border-block-color: black;
+    height: min(22.5vw,340px);
+    width: min(80vw,600px);
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Tektur", sans-serif;
+    font-size: min(2vw,16px);
 }
 
-#backgroundVideo {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-    z-index: -10;
+.projects {
+    animation: fadeIn linear;
+    animation-timeline: view();
+    background-color: #ebbe94;
+    border-radius: 200px 200px 0 0;
+    border-style: solid;
+    border-block-color: black;
+    height: min(11vw,150px);
+    width: min(40vw,600px);
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: -0.5vh;
+    font-family: "Tektur", sans-serif;
 }

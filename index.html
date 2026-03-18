@@ -6,10 +6,12 @@
 
 <header>
 
-    <h1 style="margin-top: 0px"> Sean Dunsmore </h1>
-    <h3>Programmer for hire</h3>
+    <div>
+        <h1 style="margin-top:auto"> Sean Dunsmore </h1>
+        <h3>Programmer for hire</h3>
+    </div>
 
-    <div style="text-align: center; height: 15vw; margin-bottom: -3vw; margin-top: 3vw; max-block-size: 125px;">
+    <div style="height: 15vw; max-block-size: 125px;">
         <a href="https://x.com/SeanJDunsmore"><img src="https://seanjdunsmore.github.io/Assets/Images/x_logo.png" style="width: 10vw; height: 10vw;"></a>
         <a href="https://bsky.app/profile/seanjdunsmore.bsky.social"><img src="https://seanjdunsmore.github.io/Assets/Images/bluesky_logo.png" style="width: 10vw; height: 10vw;"></a>
         <a href="https://www.linkedin.com/in/sean-dunsmore-825011257"><img src="https://seanjdunsmore.github.io/Assets/Images/linkedin_logo.png" style="width: 11vw; height: 10vw;"></a>
@@ -27,95 +29,258 @@
     <script src="index.js"></script>
 </head>
 
-<body onload="setfirstTab()" ;>
+<body onload="setfirstTab()" ;">
 
 
-    <video autoplay muted loop id="backgroundVideo">
+    <video autoplay muted loop id="backgroundVideo" style=" z-index: -10;" preload="metadata">
         <source src="Assets\Videos\Water.mp4" type="video/mp4">
     </video>
 
 
-    <div style="animation: fadeIn linear; animation-timeline: view(); margin-top: min(25vw,250px); ">
+    <div class="about" style="margin-bottom:1vh">
         <h1> About </h1>
-        <p style="white-space: pre-line;">
-            Now this is a story all about how
-            My life got flipped, turned upside down
-            And I'd like to take a minute, just sit right there
-            I'll tell you how I became the prince of a town called Bel-Air
+        <p style="margin-top:auto">
+            Hello! I'm Sean Dunsmore, a games development student at Glasgow caledonian university.
+            I've got a passion for games of all sorts, and I'm experienced in C++, C#, Unity, openGL and other programing areas.
+            I'm currently looking for work in any computing sector, be it programing, IT, or otherwise.
+            You can check out some of my previous work, or send me an email below!
         </p>
     </div>
 
     <div style=" animation: fadeIn linear; animation-timeline: view();">
 
-        <p style="text-align: center; height: 15vw; margin-bottom: 3vw; margin-top: -3vw; max-block-size: 100px;">
-            <h1> Projects </h1>
-            <h3> See some of my previous work </h3>
-        </p>
+        <div class="projects">
+            <h1 style="font-size: min(3vw,40px);"> Projects </h1>
+            <h3 style="font-size: min(2vw,32px)"> See some of my previous work </h3>
 
-        <div style="text-align: center; height: 15vw; margin-bottom: 0; margin-top: 4vw; max-block-size: 100px;">
+            <div>
 
-            <button id="lastTab" class="tabButton" onmousedown="lastTab()"><</button>
-            <button id="nextTab" class="tabButton" onmousedown="nextTab()">></button>
+                <button id="lastTab" class="tabButton" onmousedown="lastTab()"><</button>
+                <button id="nextTab" class="tabButton" onmousedown="nextTab()">></button>
+
+            </div>
 
         </div>
 
-
-        <div id="Tabs" style="margin-bottom: 25vw; margin-top: -4vh; overflow: hidden; white-space: nowrap;">
+        <div id="Tabs" class="tabHolder">
 
             <div id="tab1" class="tabContent">
 
-                <h1 style="margin-bottom: 1vw; margin-top: 0vw; white-space: nowrap; overflow: hidden;"> Swashducklers! </h1>
+                <h1 style=" white-space: nowrap; overflow: hidden; "> Swashducklers! </h1>
 
-                <div class="youtube-container" style=" float: left; margin-left: -6vw;">
-                    <iframe style=" overflow: hidden; width: 300%; height: 100%; margin-left: -100%;" src="https://www.youtube.com/embed/KtgHkzAqjjs?enablejsapi=1&rel=0&playsinline=1&modestbranding=1&autohide=1&controls=0&autoplay=1&mute=1&showinfo=0&loop=1&playlist=KtgHkzAqjjs&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <div class="video-container" style=" float: left; margin-left: 1vw">
+                    <video autoplay muted loop class="video" style=" overflow:hidden" preload="metadata">
+                        <source src="Assets\Videos\Water.mp4" type="video/mp4">
+                    </video>
                 </div>
 
                 <p class="tabText">
-                    text describing the projectdsfffffffffffffffffffffffffffffffffff
-                    sdffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
-                    dfsfsfsfsfsfsfsfsfsfsfsfsfsfsfsfsfsfsfsfsfsfsfsfsfsfsfsfsfsfsfsfsfsfsfs
-                    fdssssssssssssssssssssssssssssssssssssssssssssssss
-                    sfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsd
+                    Text Tab1
                 </p>
 
             </div>
 
             <div id="tab2" class="tabContent">
 
-                <h1 style="margin-bottom: 1vw; margin-top: 0vw; white-space: nowrap; overflow:hidden;"> TAB 2 </h1>
+                <h1 style=" white-space: nowrap; overflow: hidden; "> Ar-Ge-Be </h1>
 
-                <div class="youtube-container" style=" float: left; margin-left: -6vw;">
-                    <iframe style=" overflow:hidden; width: 300%; height: 100%; margin-left: -100%;" src="https://www.youtube.com/embed/dQw4w9WgXcQ?enablejsapi=1&rel=0&playsinline=1&modestbranding=1&autohide=1&controls=0&autoplay=1&mute=1&showinfo=0&loop=1&playlist=dQw4w9WgXcQ&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <div class="video-container" style=" float: left; margin-left: 1vw">
+                    <video autoplay muted loop class="video" style=" overflow:hidden" preload="metadata">
+                        <source src="Assets\Videos\Water.mp4" type="video/mp4">
+                    </video>
                 </div>
 
                 <p class="tabText">
-                    text 2222222the projectdsfffffffffffffffffffffffffffffffffff
-                    sdffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
-                    dfsfsfsfsfsfsfsfsfsfsfsfsfsfsfsfsfsfsfsfsfsfsfsfsfsfsfsfsfsfsfsfsfsfsfs
-                    fdssssssssssssssssssssssssssssssssssssssssssssssss
-                    sfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsd
+                    Text Tab2
                 </p>
 
             </div>
 
             <div id="tab3" class="tabContent">
 
-                <h1 style="margin-bottom: 1vw; margin-top: 0vw; white-space: nowrap; overflow: hidden;"> TAB 3 </h1>
+                <h1 style=" white-space: nowrap; overflow: hidden; "> Energy Champion </h1>
 
-                <div class="youtube-container" style=" float: left; margin-left: -6vw;">
-                    <iframe style=" overflow: hidden; width: 300%; height: 100%; margin-left: -100%;" src="https://www.youtube.com/embed/3UtoMcOFruY?enablejsapi=1&rel=0&playsinline=1&modestbranding=1&autohide=1&controls=0&autoplay=1&mute=1&showinfo=0&loop=1&playlist=3UtoMcOFruY&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <div class="video-container" style=" float: left; margin-left: 1vw">
+                    <video autoplay muted loop class="video" style=" overflow:hidden" preload="metadata">
+                        <source src="Assets\Videos\Water.mp4" type="video/mp4">
+                    </video>
                 </div>
 
                 <p class="tabText">
-                    text 3333333projectdsfffffffffffffffffffffffffffffffffff
-                    sdffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
-                    dfsfsfsfsfsfsfsfsfsfsfsfsfsfsfsfsfsfsfsfsfsfsfsfsfsfsfsfsfsfsfsfsfsfsfs
-                    fdssssssssssssssssssssssssssssssssssssssssssssssss
-                    sfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsd
+                    Text Tab3
                 </p>
 
             </div>
+
+            <div id="tab4" class="tabContent">
+
+                <h1 style=" white-space: nowrap; overflow: hidden; "> Unnamed Horror Project </h1>
+
+                <div class="video-container" style=" float: left; margin-left: 1vw">
+                    <video autoplay muted loop class="video" style=" overflow:hidden" preload="metadata">
+                        <source src="Assets\Videos\Water.mp4" type="video/mp4">
+                    </video>
+                </div>
+
+                <p class="tabText">
+                    Text Tab4
+                </p>
+
+            </div>
+
+            <div id="tab5" class="tabContent">
+
+                <h1 style=" white-space: nowrap; overflow: hidden; "> Procedural Terrain </h1>
+
+                <div class="video-container" style=" float: left; margin-left: 1vw">
+                    <video autoplay muted loop class="video" style=" overflow:hidden" preload="metadata">
+                        <source src="Assets\Videos\Water.mp4" type="video/mp4">
+                    </video>
+                </div>
+
+                <p class="tabText">
+                    Text Tab5
+                </p>
+
+            </div>
+
+            <div id="tab6" class="tabContent">
+
+                <h1 style=" white-space: nowrap; overflow: hidden; "> Procedural Dungeon </h1>
+
+                <div class="video-container" style=" float: left; margin-left: 1vw">
+                    <video autoplay muted loop class="video" style=" overflow:hidden" preload="metadata">
+                        <source src="Assets\Videos\Water.mp4" type="video/mp4">
+                    </video>
+                </div>
+
+                <p class="tabText">
+                    Text Tab6
+                </p>
+
+            </div>
+
+            <div id="tab7" class="tabContent">
+
+                <h1 style=" white-space: nowrap; overflow: hidden; "> Shaders! </h1>
+
+                <div class="video-container" style=" float: left; margin-left: 1vw">
+                    <video autoplay muted loop class="video" style=" overflow:hidden" preload="metadata">
+                        <source src="Assets\Videos\Water.mp4" type="video/mp4">
+                    </video>
+                </div>
+
+                <p class="tabText">
+                    Text Tab7
+                </p>
+
+            </div>
+
+            <div id="tab8" class="tabContent">
+
+                <h1 style=" white-space: nowrap; overflow: hidden; "> Networked platform fighter </h1>
+
+                <div class="video-container" style=" float: left; margin-left: 1vw">
+                    <video autoplay muted loop class="video" style=" overflow:hidden" preload="metadata">
+                        <source src="Assets\Videos\Water.mp4" type="video/mp4">
+                    </video>
+                </div>
+
+                <p class="tabText">
+                    Text Tab8
+                </p>
+
+            </div>
+
+            <div id="tab9" class="tabContent">
+
+                <h1 style=" white-space: nowrap; overflow: hidden; "> CMD Space Invaders </h1>
+
+                <div class="video-container" style=" float: left; margin-left: 1vw">
+                    <video autoplay muted loop class="video" style=" overflow:hidden" preload="metadata">
+                        <source src="Assets\Videos\Water.mp4" type="video/mp4">
+                    </video>
+                </div>
+
+                <p class="tabText">
+                    Text Tab9
+                </p>
+
+            </div>
+
+            <div id="tab10" class="tabContent">
+
+                <h1 style=" white-space: nowrap; overflow: hidden; "> CMD Tetris </h1>
+
+                <div class="video-container" style=" float: left; margin-left: 1vw">
+                    <video autoplay muted loop class="video" style=" overflow:hidden" preload="metadata">
+                        <source src="Assets\Videos\Water.mp4" type="video/mp4">
+                    </video>
+                </div>
+
+                <p class="tabText">
+                    Text Tab10
+                </p>
+
+            </div>
+
+            <div id="tab11" class="tabContent">
+
+                <h1 style=" white-space: nowrap; overflow: hidden; "> AI Soldiers </h1>
+
+                <div class="video-container" style=" float: left; margin-left: 1vw">
+                    <video autoplay muted loop class="video" style=" overflow:hidden" preload="metadata">
+                        <source src="Assets\Videos\Water.mp4" type="video/mp4">
+                    </video>
+                </div>
+
+                <p class="tabText">
+                    Text Tab11
+                </p>
+
+            </div>
+
+            <div id="tab12" class="tabContent">
+
+                <h1 style=" white-space: nowrap; overflow: hidden; "> This Website! </h1>
+
+                <div class="video-container" style=" float: left; margin-left: 1vw">
+                    <video autoplay muted loop class="video" style=" overflow:hidden" preload="metadata">
+                        <source src="Assets\Videos\Water.mp4" type="video/mp4">
+                    </video>
+                </div>
+
+                <p class="tabText">
+                    Text Tab12
+                </p>
+
+            </div>
+
         </div>
+    </div>
+
+    <div class="skills" style="margin-bottom:1vh">
+        <h1> Skills </h1>
+        <p style="margin-top:auto">
+            •I'm profficent in <b>C++</b> and <b>C#</b><br>
+            •I've worked as <b>part of a team</b> of various disaplines on several projects<br>
+            •I'm familiar with and have developed various games systems<br>
+            <small>•Including both low level engine and tools programming</small><br>
+            <small>
+                •And high level gameplay systems
+            </small><br>
+            •I've Developed various shader programs in both <b>OpenGL</b> and <b>DirectX</b><br>
+            •I've experence with the <b>Unity games engine</b><br>
+            •I've Experince with <b>basic network programming</b><br>
+            <small>
+                •Both in <b>unity</b> and with <b>Windows Sockets</b>
+            </small>
+            <br>
+            •I'm familiar with <b>Procedural Methods and generation</b><br>
+            •I'm familiar with basic <b>AI algorithms and development</b><br>
+            •I'm profficent in <b>debugging and error handling</b><br>
+            •I'm used to solving a variety of problems quickly and to a high standard
+        </p>
     </div>
 
 </body>
@@ -140,7 +305,7 @@
         </div>
         <div style="display: flex; justify-content: center; text-align: center;" class="h-captcha" data-captcha="true"></div>
         <div class="formboxes">
-            <button type="submit">Submit</button>
+            <button class="submitButton" type="submit">Submit</button>
         </div>
     </form>
 

@@ -11,7 +11,7 @@ var url = window.location.pathname;
 var animationrunning = false;
 
 var currentTab = 1;
-var tabAmount = 3;
+var tabAmount = 12;
 
 function setfirstTab()
 {
