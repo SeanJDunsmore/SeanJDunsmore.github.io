@@ -68,7 +68,7 @@ h1 {
 @keyframes fadeIn {
     0% {
         opacity: 0;
-        transform: translateY(-3vw);
+        transform: translateY(3vw);
     }
     50% {
         opacity: 1;
@@ -274,7 +274,7 @@ later {
     text-align: center;
     align-items: center;
     overflow: hidden;
-    width: 30vw;
+    width: min(30vw,600px);
     aspect-ratio: 16/9;
     pointer-events: none;
     margin-left: auto;
@@ -287,7 +287,7 @@ later {
 
 .video {
     align-items: center;
-    width: 30vw;
+    width: min(30vw,600px);
 }
 
 .youtube-container {
