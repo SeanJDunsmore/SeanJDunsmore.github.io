@@ -329,12 +329,13 @@ later {
     border-radius: 5% / 50%;
     border-style: solid;
     border-block-color: black;
-    height: min(40.5vw,340px);
-    width: min(80vw,600px);
+    height: min(45vw,350px);
+    width: min(90vw,650px);
     margin-left: auto;
     margin-right: auto;
     font-family: "Tektur", sans-serif;
     font-size: min(2vw,16px);
+    text-align:left;
 }
 
 .projects {
