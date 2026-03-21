@@ -243,18 +243,17 @@ form {
 }
 
 .tabText {
-    display: block;
-    text-align: center;
-    font-size: min(2vw,32px);
+    display: table-cell;
+    font-size: min(1vw,16px);
     font-family: "Tektur", sans-serif;
     text-align: center;
     padding-left: 1vh;
     padding-right: 1vh;
     margin-left: 1vw;
-    white-space: normal;
     margin-top: auto;
     overflow: hidden;
-    left:0;
+    white-space:pre-line;
+    vertical-align: middle;
 }
 
 later {
@@ -284,6 +283,9 @@ later {
     border-radius: 5% / 50%;
     border-style: solid;
     border-block-color: black;
+    display: table-cell;
+    vertical-align: middle;
+    background-color: #000000;
 }
 
 .video {
